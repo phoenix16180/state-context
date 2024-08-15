@@ -1,8 +1,8 @@
-import {useContext} from 'react';
+import { useContext } from 'react';
 import { UserContext } from './ComponentA';
 
-function ComponentD() {
-    const { user, setUser } = useContext(UserContext)
+const ComponentD = () => {
+    const { user, setUser } = useContext(UserContext);
 
     return (
         <fieldset>
@@ -10,7 +10,7 @@ function ComponentD() {
             <h5>Hello {user}</h5>
             <button onClick={() => setUser("NewUser")}>Change User</button>
         </fieldset>
-    )
-}
+    );
+};
 
-export default ComponentD
+export default ComponentD;

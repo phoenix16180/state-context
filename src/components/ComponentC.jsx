@@ -1,14 +1,10 @@
-
 import ComponentD from './ComponentD';
 
-function ComponentC() {
+const ComponentC = () => (
+    <fieldset>
+        <h1>ComponentC</h1>
+        <ComponentD/>
+    </fieldset>
+);
 
-    return (
-        <fieldset>
-            <h1>ComponentC</h1>
-            <ComponentD/>
-        </fieldset>
-    )
-}
-
-export default ComponentC
+export default ComponentC;

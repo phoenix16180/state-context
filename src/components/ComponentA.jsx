@@ -1,11 +1,10 @@
 import { useState, createContext } from 'react';
 import ComponentB from './ComponentB';
 
-export const UserContext = createContext()
+export const UserContext = createContext();
 
-function ComponentA() {
-
-    const [user, setUser] = useState("1337User")
+const ComponentA = () => {
+    const [user, setUser] = useState("1337User");
 
     return (
         <fieldset>
@@ -16,7 +15,7 @@ function ComponentA() {
                 <ComponentB user={user} />
             </UserContext.Provider>
         </fieldset>
-    )
-}
+    );
+};
 
-export default ComponentA
+export default ComponentA;
